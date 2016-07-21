@@ -1,4 +1,19 @@
 /*
+	Theme Name: Real Wealth Australia Website
+	Theme URI: http://www.realwealthaustralia.com
+	Description: A mobile responsive and HTML5 theme built Specifically for Real Wealth Australia based on the Genesis Framework.
+	Author: Zmarak Bangash
+	Author URI: http://www.zmarakbangash.com/
+
+	Version: 4.0
+
+	Tags: black, white, one-column, responsive-layout, custom-background, custom-header, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
+
+	Template: genesis
+	Template Version: 2.1
+*/
+
+/*
 <!--  *******************************************************************************************************************************************************************************************************************  -->
 <!-- 																																																					   -->
 <!--  FILENAME: realwealth v7.0.css                                                                                                                                                                         			   -->
@@ -13,27 +28,11 @@
 <!--  23-FEB-16 J Webb        Updated to include class htmlcomment for putting comments into the program and avoid WordPress and the browser interpreting it
 <!--  29-APR-16 Z Bangash	  Updated to Include classes for Home Top Left andd Home Top Right Widgets.				
 <!--  03-MAY-16 Z Bangash 	  Updated to include classees for Real  Estate Unplugged widget on the home page
-<!--  09-JUN-16 Z Bangash 	  Updated to include classees for 59 BM Optin Click Here Button											  
+<!--  09-JUN-16 Z Bangash 	  Updated to include classees for 59 BM Optin Click Here Button		
+<!--  21-JUL-16 Z Bangash	  Updated the landing page template CSS.									  
 <!-- 																																																					   -->
 <!--  *******************************************************************************************************************************************************************************************************************  -->
 */ 
-/*
-	Theme Name: Real Wealth Australia Website
-	Theme URI: http://my.studiopress.com/themes/magazine/
-	Description: A mobile responsive and HTML5 theme built Specifically for Real Wealth Australia based on the Genesis Framework.
-	Author: Zmarak Bangash
-	Author URI: http://www.realwealthaustralia.com/
-
-	Version: 4.0
-
-	Tags: black, white, one-column, responsive-layout, custom-background, custom-header, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
-
-	Template: genesis
-	Template Version: 2.1
-
-	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php 
-*/
 
 
 /* Table of Contents
@@ -587,7 +586,7 @@ Structure and Layout
 
 .magazine-landing .site-inner,
 .magazine-landing .wrap {
-	max-width: 800px;
+	/* max-width: 800px; */
 }
 
 .magazine-landing .site-inner {
