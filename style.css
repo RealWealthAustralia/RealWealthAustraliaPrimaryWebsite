@@ -5,7 +5,7 @@
 	Author: Zmarak Bangash
 	Author URI: http://www.zmarakbangash.com/
 
-	Version: 4.0
+	Version: 8.0
 
 	Tags: black, white, one-column, responsive-layout, custom-background, custom-header, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
 
@@ -16,7 +16,7 @@
 /*
 <!--  *******************************************************************************************************************************************************************************************************************  -->
 <!-- 																																																					   -->
-<!--  FILENAME: realwealth v7.0.css                                                                                                                                                                         			   -->
+<!--                                                                                                                                                                         			   -->
 <!--  DESCRIPTION:																																																		   -->
 <!--    This file contains all style sheet definitions for Real Wealth Australia.																																		   -->
 <!-- 																																																					   -->
@@ -609,12 +609,12 @@ Structure and Layout
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 1140px;
+	max-width: 1140px; /* - Removing this is going to make the site full width */
 }
 
 .site-inner {
 	clear: both;
-	padding-top: 40px;
+	padding-top: 40px; /* - Removing this will push the site to the top */
 }
 
 .magazine-home .site-inner {
@@ -630,11 +630,1037 @@ Structure and Layout
 	padding-bottom: 40px;
 }
 
+.real-wealth-home .site-inner, .real-wealth-home .wrap, .rwa_primary_page .site-inner, .rwa_primary_page .wrap, .rwa_primary_page_sidebar .wrap {
+	max-width: 100%;
+}
+
+.real-wealth-home .site-inner {
+	padding-top: 0px;
+}
+
+.real-wealth-home .site-header {
+	display: none;
+}
+
+/* Real Wealth Australia Front Page Styles
+ * ------------------------------------------------------
+ */
+
+/*.real-wealth-home {
+	display: flex;
+}*/
+
+/* Front Page Row 1
+ * -------------------------
+ */
+
+.front-page-row-1 {
+	background: url("/wp-content/uploads/2016/08/Homepage_Banner_3.jpg") cover no-repeat;
+	border-top: 1px solid #333;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	/* display: flex; */
+	height: 700px;
+	
+}
+
+.front-page-row-1 .widget-wrap {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.front-page-row-1 .hero-title {
+	max-width: 700px;
+	float: right; 
+	/* background: rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+	border-radius: 5px;
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-right: 120px; 
+	margin-top: 250px;
+	
+}
+
+.front-page-row-1 .hero-title h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	/* font-weight: bold; */
+}
+
+.front-page-row-1 .hero-title .button1 button {
+	background-color: transparent;
+	border: solid 2px #FFFFFF;
+	font-size: 25px;
+	width: 300px;
+	
+}
+
+.front-page-row-1 .hero-title .button1 button:hover {
+	background-color: #ffffff;
+	border: solid 2px #FFFFFF;
+	color: black;
+	
+}
+
+.front-page-row-1 .hero-title .button2 button {
+	background-color: #ffffff;
+	border: solid 2px #FFFFFF;
+	font-size: 25px;
+	color: black;
+	width: 300px;
+}
+
+.front-page-row-1 .hero-title .button2 button:hover {
+	background-color: transparent;
+	border: solid 2px #FFFFFF;
+	color: #ffffff;
+} 
+
+/* Front Page Row 2
+ * ----------------------
+ */
+
+.front-page-row-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: flex-start; */
+	margin: 20px;
+	font-family: Helvetica;
+}
+
+.front-page-row-2 .front-page-row-2-left {
+	width: 70%; /* 1350px; */
+	padding: 20px 25px 25px 0px;
+	/*order: 1; This should be used when changing orders on smaller screens */ 
+}
+
+.front-page-row-2 .front-page-row-2-right {
+	width: 30%; /* 500px; */
+	border-left: 2px dashed grey;
+	padding-left: 25px;
+	/*order: 2; This should be used when changing orders on smaller screens */
+}
+
+.front-page-row-2 .front-page-row-2-left h2 {
+	font-size: 50px;
+	font-weight: bold;
+	color: #092f4e;
+	font-family: Helvetica;
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-success-stories a {
+	color: #666666;
+	font-style: italic;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-success-stories a:hover {
+	color: #e8554e;
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section{
+	display: flex;
+	flex-flow: row wrap;
+	/*justify-content: space-around;*/	
+	background-color: rgba(171, 171, 171, 0.38);
+	padding-left: 20px;
+	margin-left: -20px;
+	padding-top: 20px;
+	/*max-width: 1200px;*/
+	/*left: -1296px;*/
+	/*position: absolute;*/
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section p {
+	color: #666666;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-text {
+		/*flex: 1 0px; */
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-heading {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button {
+	margin: 0px auto;	
+	/* padding-right: 50px; */
+	/*width: 500px; */
+	
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+	color: #666666;
+	background-color: #fff;	
+	font-weight: bold;
+	border: 5px solid #666666;
+	/*letter-spacing: 3px;*/
+	padding: 0px 24px 0px 24px;
+	height: 50px;
+	font-size: 25px;
+}
+
+.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button:hover {
+	color: #e8554e;
+	border: 5px solid #e8554e;	
+}
+
+.front-page-row-2 .front-page-row-2-right .widget-title  {
+	background: #092F4E;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 25px;	
+}
+
+.front-page-row-2 .front-page-row-2-right .entry-title {
+	color: #092F4E;
+	text-transform: uppercase;	
+}
+
+.front-page-row-2 .front-page-row-2-right .entry-title a {
+	color: #092F4E;
+	text-transform: uppercase;	
+	font-weight: 550;
+}
+
+.front-page-row-2 .front-page-row-2-right .entry-title a:hover {
+	color: #e8554e;	
+} 
+
+.front-page-row-2 .front-page-row-2-right .more-from-category a {
+	color: #666666;
+	background-color: #fff;	
+	font-weight: bold;
+	border: 5px solid #666666;
+	padding: 5px 0px 5px 0px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 3px;
+	display: block;
+	text-align: center;
+}
+
+/* Front Page Row 3
+ * ---------------------
+ */
+
+.front-page-row-3 {
+	display: flex;
+	flex-flow: row wrap;
+	/*justify-content: space-around;*/
+	margin: 0px;
+	font-family: Helvetica;
+	
+}
+
+.front-page-row-2 .front-page-row-2-right .more-from-category a:hover {
+	color: #e8554e;
+	border: 5px solid #e8554e;	
+}
+
+
+.front-page-row-3 .front-page-row-3-left {
+	background: url("/wp-content/uploads/2016/07/house-in-hand-flipped-b-and-w.jpg") no-repeat center ;	
+	padding: 25px;
+	background-size: cover;
+	width: 50%;
+	height: 350px;	
+} 
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are, .front-page-row-3 .front-page-row-3-right .fp-what-we-do {
+	width: 40%;	
+	margin-top: 5%;
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are h2, .front-page-row-3 .front-page-row-3-right .fp-what-we-do h2 {
+	text-transform: uppercase;	
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are p, .front-page-row-3 .front-page-row-3-right .fp-what-we-do p {
+	font-size: 18px;	
+	font-weight: bold;
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+	margin-left: 57%;	
+	
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are p {
+	color: #666666;	
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are h2 {
+	color: #666666;
+	font-weight: 550;
+}
+
+.front-page-row-3 .front-page-row-3-right {
+	background: url("/wp-content/uploads/2016/07/house-in-hand-female.jpg") no-repeat center ;	
+	padding: 25px;
+	background-size: cover;
+	width: 50%;
+	height: 350px;
+	
+} 
+
+.front-page-row-3 .front-page-row-3-right .fp-what-we-do {
+	margin-left: 7%;	
+}
+
+.front-page-row-3 .front-page-row-3-right .fp-what-we-do p {
+	color: #092F4E;	
+}
+
+.front-page-row-3 .front-page-row-3-right .fp-what-we-do h2 {
+	color: #092F4E;
+	font-weight: 550;	
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are button {
+	color: #666666;
+	background-color: transparent;	
+	font-weight: bold;
+	border: 5px solid #666666;
+	width: 50%;
+	letter-spacing: 4px;
+}
+
+.front-page-row-3 .front-page-row-3-right .fp-what-we-do button {
+	color: #092F4E;
+	background-color: transparent;	
+	font-weight: bold;
+	border: 5px solid #092F4E;
+	width: 50%;
+	letter-spacing: 4px;
+}
+
+.front-page-row-3 .front-page-row-3-left .fp-who-we-are button:hover, .front-page-row-3 .front-page-row-3-right .fp-what-we-do button:hover {
+	color: #e8554e;
+	border: 5px solid #e8554e;		
+}
+
+/* Animation Classes
+ * ----------------------------------
+ * These animation classes apply to the front page to add the sliding effects.
+ * These animation classes can also be used on other pages but we need to make sure that 
+ * the jQuery file has been imported. 
+ * For reference and more explanation on these classes please visit https://www.sitepoint.com/scroll-based-animations-jquery-css3/.
+ * 
+ * These classes are being referenced from front-page-slider.js. 
+ */
+
+/*
+ * Initiate Animation Element
+ */
+
+.animation-element {
+	opacity: 0;
+	position: relative;
+}
+
+/*
+ * Add sliding effect from the left. Transition will take 500ms.
+ */
+
+.animation-element.slide-left-500ms {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left-500ms.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+} 
+
+/*
+ * Add sliding effect from the left. Transition will take 1s.
+ */
+
+.animation-element.slide-left-1s {
+  opacity: 0;
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+
+.animation-element.slide-left-1s.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+} 
+
+/*
+ * Add sliding effect from the right. Transition will take 500ms.
+ */
+
+.animation-element.slide-right-500ms {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.animation-element.slide-right-500ms.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+} 
+
+/*
+ * Add sliding effect from the right. Transition will take 1s.
+ */
+
+.animation-element.slide-right-1s {
+  opacity: 0;
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.animation-element.slide-right-1s.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+} 
+
+/**
+ * 	RWA Primary Pages
+ * 	This style applies to RWA Primary pages that are directly linked to Real Wealth Australia's homepage. Once we have finalised these styles, 
+ *  they will then be propagated to the rest of the pages as well.
+ *  ------------------------------------------------------------------------------------------------------------------------------------------
+ */
+
+/* Move site content to the right */
+
+.rwa_primary_page .content-sidebar-wrap .content {
+	width: 80%;
+	text-align: justify;
+	padding-right: 400px;
+	/*color: #092F4E;*/
+	/*font-weight: bold;*/
+}
+
+/* Style Entry Title */
+
+.rwa_primary_page .entry-title {
+	color: #092F4E;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/* Add border bottom under the title and content*/
+
+.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after  {
+	border-bottom: solid 3px #FFA500;
+	display: block;
+	content: '';
+	width: 100%;
+	margin-left: -400px;
+	height: 20px;
+	width: 134%
+	
+}
+
+/**
+ * 	Buttons on the Primary Pages
+ */
+
+.rwa-primary-pages-buttons {
+	text-align: center;
+}
+
+.rwa-primary-pages-buttons .grey, .rwa-primary-pages-buttons .blue  {
+	width: 25%;
+	margin: 10px 10px 10px 0px;	
+}
+
+.rwa-primary-pages-buttons .grey {
+	background-color: #666666;
+}
+
+.rwa-primary-pages-buttons .grey:hover {
+	background-color: #1c1c1c;
+}
+
+.rwa-primary-pages-buttons .blue {
+	background-color: #092F4E;
+}
+
+.rwa-primary-pages-buttons .blue:hover {
+	background-color: #5897fb;
+}
+
+.rwa-primary-pages-buttons .cta {
+	background-color: #FFA500;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+
+/**
+ * 	RWA Primary Pages with Sidebar
+ * 	This style applies to RWA Primary pages that are directly linked to Real Wealth Australia's homepage and have a sidebar. Once we have finalised these styles, 
+ *  they will then be propagated to the rest of the pages as well.
+ *  ------------------------------------------------------------------------------------------------------------------------------------------
+ */
+
+/* Move site content to the right */
+
+.rwa_primary_page_sidebar .content-sidebar-wrap .content {
+	/* width: 80%; */
+	text-align: justify;
+	padding-right: 20px;
+	/*color: #092F4E;*/
+	/*font-weight: bold;*/
+}
+
+/* Style Entry Title */
+
+.rwa_primary_page_sidebar .entry-title {
+	color: #092F4E;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/* Add border bottom under the title and content*/
+
+.rwa_primary_page_sidebar .entry-title:after, .rwa_primary_page_sidebar .entry-content:after  {
+	border-bottom: solid 3px #FFA500;
+	display: block;
+	content: '';
+	width: 100%;
+	margin-left: -400px;
+	height: 20px;
+	width: 134%
+	
+}
+
+/**
+ * 	Sidebar style
+ */
+
+.primary-page-sidebar-title {
+	background: #092F4E;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 25px;
+    margin-bottom: 10px;	
+}
+
+.primary-page-sidebar  .entry-title {
+	color: #092F4E;
+	text-transform: uppercase;	
+}
+
+.primary-page-sidebar .entry-title a {
+	color: #092F4E;
+	text-transform: uppercase;	
+	font-weight: 550;
+}
+
+.primary-page-sidebar .entry-title a:hover {
+	color: #e8554e;	
+} 
+
+.primary-page-sidebar .entry-meta {
+	margin-bottom: 10px;
+}
+
+.primary-page-sidebar .more-from-category a {
+	color: #666666;
+	background-color: #fff;	
+	font-weight: bold;
+	border: 5px solid #666666;
+	padding: 5px 0px 5px 0px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 3px;
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 0px;
+} 
+
+.primary-page-sidebar .entry-title:after, .primary-page-sidebar .entry-content:after  {
+	border-bottom: solid 0px #FFA500;
+	height: 0px;
+}
+
+/* Styling After Entry Widget on the RWA Primary Page Templates */
+
+.rwa-primary-pages-after-entry {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	text-align: center;
+	padding-top: 25px;
+	flex-wrap: wrap;
+}
+
+.rwa-primary-pages-after-entry .grey, .rwa-primary-pages-after-entry .blue  {
+	width: 40%;
+	margin: 10px 10px 10px 0px;
+	
+}
+
+.rwa-primary-pages-after-entry .grey {
+	background-color: #666666;
+}
+
+.rwa-primary-pages-after-entry .grey:hover {
+	background-color: #1c1c1c;
+}
+
+.rwa-primary-pages-after-entry .blue {
+	background-color: #092F4E;
+}
+
+.rwa-primary-pages-after-entry .blue:hover {
+	background-color: #5897fb;
+}
+
+.rwa-primary-pages-after-entry .cta {
+	background-color: #FFA500;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.rwa-primary-pages-after-entry .cta:hover {
+	background-color: #e8562a;
+
+}
+
+
+
+
+/* Front Page and RWA Primary Pages Media Queries
+ * --------------------------------------------------
+ */
+
+@media only screen and (max-width: 1440px) {
+	
+	.real-wealth-home {
+		overflow-x: hidden;
+	}
+	
+	/* Row 1 */
+	
+	.front-page-row-1 .hero-title {
+		margin-right: 20px;
+	}
+	
+	/* Row 2 */
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-heading {
+		font-size: 20px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+		font-size: 20px;
+		margin: 0px 380px 15px 0px;
+		font-size: 20px;
+		width: 400px;
+	}
+	
+	/* Row 3 */
+	.front-page-row-3 .front-page-row-3-left .fp-who-we-are button, .front-page-row-3 .front-page-row-3-right .fp-what-we-do button {
+		width: auto;
+	}
+	
+	.front-page-row-3 .front-page-row-3-right .fp-what-we-do, .front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+		width: 265px;
+	}
+	
+	.front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+		margin-left: 43%;
+	}
+	
+	/* Primary Pages */
+	
+	.rwa_primary_page .content-sidebar-wrap .content {
+		width: 80%;
+		padding-right: 200px;
+	}
+	
+	.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after {
+		margin-left: -300px;
+		
+	}
+	
+	
+	/* Animations */	
+	
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	.real-wealth-home {
+		overflow-x: hidden;
+	}
+	
+	/* Row 1 */
+	
+	.front-page-row-1 {
+		height: 400px;
+	}
+	
+	.front-page-row-1 .hero-title {
+		margin-right: 120px; 
+		margin-top: 10px;
+	}
+	
+	/* Row 2 */
+	.front-page-row-2 .front-page-row-2-left h2 {
+		font-size: 30px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-success-stories a {
+		font-size: 20px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section {
+	/*	text-align: center;*/
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-heading, .front-page-row-2 .front-page-row-2-left .fp-optin-section p  {
+		font-size: 20px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+		margin: 0px 340px 15px 0px;
+	}
+	
+	/* Row 3 */
+	
+	.front-page-row-3 .front-page-row-3-left, .front-page-row-3 .front-page-row-3-right {
+		padding: 0px;
+	}
+	
+	/* Primary Pages */
+	
+	.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after {
+		margin-left: -210px;
+		
+	}
+	
+	/*Primary Page with Sidebar */
+	
+	.rwa_primary_page_sidebar .site-inner {
+		padding-right: 40px;
+	} 
+	
+	.rwa_primary_page_sidebar .content-sidebar-wrap .content {
+		margin-left: 40px;
+	}
+	
+	.rwa_primary_page_sidebar .entry-title:after, .rwa_primary_page_sidebar .entry-content:after {
+		margin-left: -50px;
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	
+	/* Row 1 */
+	
+	.front-page-row-1 {
+		height: 350px;
+	}
+	
+	.front-page-row-1 .widget-wrap {
+		padding-top: 20px;
+	}
+	
+	.front-page-row-1 .hero-title {
+		margin-top: 10px;
+		background: rgba(0, 0, 0, 0.6);
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.front-page-row-1 .hero-title h1 {
+		color: #ffffff;
+		font-size: 40px;
+	}
+	
+	/* Row 2 */
+	
+	.front-page-row-2 {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left {
+		padding: 20px 0px 25px 0px
+	}
+	
+	.front-page-row-2 .front-page-row-2-left, .front-page-row-2 .front-page-row-2-right {
+		width: 100%;
+		padding-top: 0px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left h2 {
+		font-size: 25px;
+		text-align: justify;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-success-stories a {
+		font-size: 20px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+		margin: 0px 378px 15px 0px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-right {
+		padding-left: 0px;
+		border-left: none; 
+	}
+	
+	/* Row 3 */
+	
+	.front-page-row-3 {
+		flex-flow: column wrap;
+	}
+	
+	.front-page-row-3 .front-page-row-3-left, .front-page-row-3 .front-page-row-3-right {
+		width: 100%;
+	}
+	
+	.front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+		margin-left: 57%;
+	}
+	
+	/* Primary Pages */
+	
+	.rwa_primary_page .content-sidebar-wrap .content {
+		padding-right: 100px;
+	}
+	
+	.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after {
+		margin-left: -155px;
+	}
+	
+	/* Primary Pages with sidebar */
+	
+	.rwa_primary_page_sidebar .primary-page-sidebar {
+		display: none;
+	}
+	
+	/* After Entry Widget */
+	
+	.rwa-primary-pages-after-entry {
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	
+	.rwa-primary-pages-after-entry .blue, .rwa-primary-pages-after-entry .grey {
+		width: 100%
+	}
+
+	
+}
+
+@media only screen and (max-width: 525px) {
+	
+	html {
+		margin-top: 10px !important;
+	}
+
+	.front-page-row-1 .hero-title .button2 {
+		margin-top: 10px;
+	}
+	
+	/* Primary Pages */
+	
+	.rwa_primary_page .content-sidebar-wrap .content {
+		padding-right: 40px;
+		width: 100%;
+		padding-left: 20px;
+	}
+	
+	.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after {
+		/*margin-left: -105px;*/
+	}
+	
+}
+
+@media only screen and (max-width: 450px) {
+	
+	/* Row 1 */	
+	.front-page-row-1 {
+		height: 450px;
+	}
+	
+	/* Row 2 */
+	.front-page-row-2 {
+		text-align: center;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left h2 {
+		text-align: center;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section {
+		text-align: center;
+		margin-left: 0px;
+		padding-right: 35px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section p {
+		font-size: 18px;
+	}
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+		width: 60%;
+		font-size: 15px;
+	}
+	
+	/* Row 3 */
+	
+	.front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+		margin-left: 40%;
+	}
+	
+	/* Primary Pages */
+	
+	.rwa_primary_page .content-sidebar-wrap .content {
+		padding-right: 20px;
+		width: 100%;
+		padding-left: 20px;
+	}
+	
+	.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after {
+		margin-left: -100px;
+	}
+	
+}
+
+@media only screen and (max-width: 360px) {
+	
+	.front-page-row-1 {
+		height: 500px;
+	}
+	
+	.front-page-row-1 .hero-title .button1 button, .front-page-row-1 .hero-title .button2 button {
+		width: auto;
+	}
+	
+	/* Row 2 */
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+		width: 60%;
+		margin: 0px 300px 15px 0px;
+		font-size: 15px;
+		padding: 0px;
+	}
+	
+	/* Row 3 */
+	.front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+		margin-left: 20%;
+	}
+	
+	/* Primary Pages */
+	
+	.rwa_primary_page .content-sidebar-wrap .content {
+		padding-right: 15px;
+		width: 100%;
+		padding-left: 10px;
+	}
+	
+	.rwa_primary_page .entry-title:after, .rwa_primary_page .entry-content:after {
+		/*margin-left: -50px;*/
+		/*width: 100%*/
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+	.front-page-row-2 .front-page-row-2-left .fp-optin-section .fp-optin-button button {
+		margin: 0px 260px 15px 0px;
+		
+	}
+	
+	.front-page-row-3 .front-page-row-3-left .fp-who-we-are {
+		margin-left: 5%;
+	}
+	
+}
+
 
 /* Column Widths and Positions
 --------------------------------------------- */
 
 /* Wrapping div for .content and .sidebar-primary */
+
+/*.content-sidebar-wrap {
+	margin: 40px;
+}*/
 
 .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
@@ -1652,11 +2678,11 @@ Content Area
 }
 
 .entry-content a {
-	color: #e8554e;
+	color: #2e79a6;
 }
 
 .entry-content a:hover {
-	color: #222;
+	color: #4092a8;
 }
 
 .entry-content .attachment a,
@@ -2110,186 +3136,43 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #222;
+	background-color: #051a2b;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
-	text-align: center;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 0px;
 }
 
 .site-footer .wrap {
 	border-top: 1px solid #444;
-	padding: 60px 0;
+	padding: 30px 20px;
+	color: #fff;
 }
 
 .site-footer,
 .site-footer a {
-	color: #aaa;
+	color: #fff;
 }
 
 .site-footer a:hover {
-	color: #fff;
+	color: #e8554e;
 }
 
 .site-footer p {
 	margin-bottom: 0;
 }
 
-
-/*
-Color Styles
----------------------------------------------------------------------------------------------------- */
-
-.magazine-pro-blue a.more-link:hover,
-.magazine-pro-blue .home-middle a.more-link,
-.magazine-pro-blue .home-top a.more-link,
-.magazine-pro-blue .site-title a:hover,
-.magazine-pro-green a.more-link:hover,
-.magazine-pro-green .home-middle a.more-link,
-.magazine-pro-green .home-top a.more-link,
-.magazine-pro-green .site-title a:hover,
-.magazine-pro-orange a.more-link:hover,
-.magazine-pro-orange .home-middle a.more-link,
-.magazine-pro-orange .home-top a.more-link,
-.magazine-pro-orange .site-title a:hover {
-	color: #222;
+.footer-logo {
+	float: right;
+	width: 8%;
+	margin-right: 30px;
 }
 
-.magazine-pro-blue .archive-pagination li a:hover,
-.magazine-pro-blue .footer-widgets a:hover,
-.magazine-pro-blue .home-middle a.more-link:hover,
-.magazine-pro-blue .home-top a.more-link:hover,
-.magazine-pro-blue .site-footer a:hover,
-.magazine-pro-green .archive-pagination li a:hover,
-.magazine-pro-green .footer-widgets a:hover,
-.magazine-pro-green .home-middle a.more-link:hover,
-.magazine-pro-green .home-top a.more-link:hover,
-.magazine-pro-green .site-footer a:hover,
-.magazine-pro-orange .archive-pagination li a:hover,
-.magazine-pro-orange .footer-widgets a:hover,
-.magazine-pro-orange .home-middle a.more-link:hover,
-.magazine-pro-orange .home-top a.more-link:hover,
-.magazine-pro-orange .site-footer a:hover {
-	color: #fff;
-}
-
-.magazine-pro-blue .enews-widget input:hover[type="submit"],
-.magazine-pro-green .enews-widget input:hover[type="submit"],
-.magazine-pro-orange .enews-widget input:hover[type="submit"] {
-	background-color: #fff;
-}
-
-.magazine-pro-blue .footer-widgets a:hover,
-.magazine-pro-green .footer-widgets a:hover,
-.magazine-pro-orange .footer-widgets a:hover {
-	color: #ccc;
-}
-
-/* Magazine Pro Blue
---------------------------------------------- */
-
-.magazine-pro-blue a:hover,
-.magazine-pro-blue .entry-content a,
-.magazine-pro-blue .entry-title a:hover,
-.magazine-pro-blue .genesis-nav-menu a:hover,
-.magazine-pro-blue .genesis-nav-menu .current-menu-item > a,
-.magazine-pro-blue .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-.magazine-pro-blue .nav-primary a:hover,
-.magazine-pro-blue .nav-primary .sub-menu a:hover,
-.magazine-pro-blue .nav-primary .genesis-nav-menu .current-menu-item > a {
-	color: #469bd1;
-}
-
-.js.magazine-pro-blue .content .home-middle a .entry-time,
-.js.magazine-pro-blue .content .home-top a .entry-time,
-.magazine-pro-blue button:hover,
-.magazine-pro-blue input:hover[type="button"],
-.magazine-pro-blue input:hover[type="reset"],
-.magazine-pro-blue input:hover[type="submit"],
-.magazine-pro-blue .archive-pagination li a:hover,
-.magazine-pro-blue .archive-pagination li.active a,
-.magazine-pro-blue .button:hover,
-.magazine-pro-blue .enews-widget input[type="submit"],
-.magazine-pro-blue .entry-content .button:hover,
-.magazine-pro-blue .home-middle a.more-link:hover,
-.magazine-pro-blue .home-top a.more-link:hover,
-.magazine-pro-blue .sidebar .tagcloud a:hover {
-	background-color: #469bd1;
-}
-
-.magazine-pro-blue .button:hover {
-	color: #fff;
-}
-
-/* Magazine Pro Green
---------------------------------------------- */
-
-.magazine-pro-green a:hover,
-.magazine-pro-green .entry-content a,
-.magazine-pro-green .entry-title a:hover,
-.magazine-pro-green .genesis-nav-menu a:hover,
-.magazine-pro-green .genesis-nav-menu .current-menu-item > a,
-.magazine-pro-green .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-.magazine-pro-green .nav-primary a:hover,
-.magazine-pro-green .nav-primary .sub-menu a:hover,
-.magazine-pro-green .nav-primary .genesis-nav-menu .current-menu-item > a {
-	color: #3fbd85;
-}
-
-.js.magazine-pro-green .content .home-middle a .entry-time,
-.js.magazine-pro-green .content .home-top a .entry-time,
-.magazine-pro-green button:hover,
-.magazine-pro-green input:hover[type="button"],
-.magazine-pro-green input:hover[type="reset"],
-.magazine-pro-green input:hover[type="submit"],
-.magazine-pro-green .archive-pagination li a:hover,
-.magazine-pro-green .archive-pagination li.active a,
-.magazine-pro-green .button:hover,
-.magazine-pro-green .enews-widget input[type="submit"],
-.magazine-pro-green .entry-content .button:hover,
-.magazine-pro-green .home-middle a.more-link:hover,
-.magazine-pro-green .home-top a.more-link:hover,
-.magazine-pro-green .sidebar .tagcloud a:hover {
-	background-color: #3fbd85;
-}
-
-.magazine-pro-green .button:hover {
-	color: #fff;
-}
-
-/* Magazine Pro Orange
---------------------------------------------- */
-
-.magazine-pro-orange a:hover,
-.magazine-pro-orange .entry-content a,
-.magazine-pro-orange .entry-title a:hover,
-.magazine-pro-orange .genesis-nav-menu a:hover,
-.magazine-pro-orange .genesis-nav-menu .current-menu-item > a,
-.magazine-pro-orange .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-.magazine-pro-orange .nav-primary a:hover,
-.magazine-pro-orange .nav-primary .sub-menu a:hover,
-.magazine-pro-orange .nav-primary .genesis-nav-menu .current-menu-item > a {
-	color: #f2a561;
-}
-
-.js.magazine-pro-orange .content .home-middle a .entry-time,
-.js.magazine-pro-orange .content .home-top a .entry-time,
-.magazine-pro-orange button:hover,
-.magazine-pro-orange input:hover[type="button"],
-.magazine-pro-orange input:hover[type="reset"],
-.magazine-pro-orange input:hover[type="submit"],
-.magazine-pro-orange .archive-pagination li a:hover,
-.magazine-pro-orange .archive-pagination li.active a,
-.magazine-pro-orange .button:hover,
-.magazine-pro-orange .enews-widget input[type="submit"],
-.magazine-pro-orange .entry-content .button:hover,
-.magazine-pro-orange .home-middle a.more-link:hover,
-.magazine-pro-orange .home-top a.more-link:hover,
-.magazine-pro-orange .sidebar .tagcloud a:hover {
-	background-color: #f2a561;
-}
-
-.magazine-pro-orange .button:hover {
-	color: #fff;
+.footer-headline {
+	font-family: Helvetica;
+	font-weight: 600;
+	font-size: 16px;
 }
 
 
@@ -2396,10 +3279,10 @@ Media Queries
     background: url(http://www.realwealthaustralia.com/wp-content/uploads/2016/03/Header-Top.jpg) no-repeat !important;
     }
 
-	.site-inner,
+	/* .site-inner,
 	.wrap {
 		max-width: 960px;
-	}
+	} */
 
 	.title-area {
 		width: 380px;
@@ -2439,6 +3322,14 @@ Media Queries
 
 }
 
+@media only screen and (max-width: 1024px) {
+	
+	.footer-logo {
+		width: 15%;
+	}
+	
+}
+
 @media only screen and (max-width: 1023px) {
 	
 	.header-image .site-title a {
@@ -2452,13 +3343,6 @@ Media Queries
 	width: 100%;
     }
 	
-	
-
-	.site-inner,
-	.wrap {
-		max-width: 750px;
-	}
-
 	.content,
 	.content-sidebar-sidebar .content,
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -2510,6 +3394,10 @@ Media Queries
 	.genesis-nav-menu > .right {
 		display: none;
 	}
+	
+	.footer-logo {
+		width: 15%;
+	}
 
 }
 
@@ -2526,14 +3414,14 @@ Media Queries
 	width: 100%;
     }
 
-	.footer-widgets,
+	/* .footer-widgets,
 	.nav-secondary,
 	.site-footer,
 	.site-header,
 	.site-inner {
 		padding-left: 5%;
 		padding-right: 5%;
-	}
+	} */
 
 	.genesis-nav-menu > .first > a {
 		padding-left: 20px;
@@ -2766,3 +3654,296 @@ Media Queries
       }
 	
 }
+
+@media (min-width: 1000px) and (max-width: 1549px){
+
+
+.ubermenu .ubermenu-submenu-type-stack>.ubermenu-item-normal>.ubermenu-target {
+        padding: 5px 8px !important;
+    font-size: 13px;
+}
+
+
+}
+
+@media (min-width: 1550px) and (max-width: 1736px){
+
+
+.ubermenu .ubermenu-submenu-type-stack>.ubermenu-item-normal>.ubermenu-target {
+        padding: 5px 10px !important;
+    font-size: 15px;
+}
+
+
+}
+/*footer styling fatfooter*/
+.fatfooter h3 {
+    color: #fff;
+    
+
+}
+.fatfooter {
+       padding: 0px 0px 20px 0px;
+}
+
+.fatfooter .cinfo span.info {
+    padding: 10px;
+}
+.fatfooter .cinfo ul {
+    list-style: none;
+}
+
+.fatfooafter {
+    clear: both !important;
+    border-top: 2px solid #fff;
+    padding-top: 20px;
+text-align: center;
+}
+
+.fatfooter .foo1{
+    width: 24.5% !important;
+       display: inline-table;
+padding: 20px 0px 20px 0px;
+
+}
+
+.fatfooter .foo1 img {
+    width: 19em;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.cinfo.foo2 {
+    width: 49%;
+    display: inline-table;
+}
+.awards img {
+  
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+}
+.awards {
+    text-align: center !important;
+    display: inline-block;
+width: 30.33%;
+        }
+
+  .footer-headline {
+         float: left;
+    width: 100%;
+}
+.footext {
+    float: left;
+            width: 39.33%;
+    margin: 0 auto;
+    text-align: left;
+}
+.fatfooafter .footer-logo{
+ width: 25.33%;
+}
+.footer-logo img {
+    width: 40%;
+float: right;
+}
+
+@media (max-width: 1200px){
+.fatfooter .foo1{
+    width: 49.5% !important;
+       display: inline-table;
+
+}
+
+.awards img {
+    width: 10%;
+    
+   }
+.awards{
+display: initial;
+    position: inherit;
+
+}
+.footer-logo img {
+    width: 50%;
+   }
+}
+@media (max-width: 480px){
+.fatfooter .foo1{
+    width: 100% !important;
+       display: block;
+
+}
+.fatfooter .foo1 img {
+padding-bottom:20px;
+    position: inherit;
+  
+}
+
+.fatfooafter .footer-logo {
+float:none;
+   
+    text-align: center !important;
+    display: inline-table;
+padding-bottom:15px;
+ width: 100% !important;
+}
+.awards {
+ float:none;
+       display: inline-table;
+ width: 100%;
+
+}
+.footext {
+    width: 100%;
+ text-align: center;
+padding-bottom:15px;
+}
+.awards img {
+    width: 20%;
+}
+.fatfooafter {
+   
+    display: block;
+}
+.footer-logo img {
+      float: none;
+}
+}
+
+
+footer.site-footer .wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+nav.nav-primary .wrap {
+    width: 100% !important;
+    max-width: 100%;
+}
+/*blog pages styling header*/
+.site-title :after {
+    border-bottom: solid 3px #FFA500;
+    display: block;
+    content: '';
+    width: 100%;
+    margin-left: -400px;
+    height: 20px;
+    width: 134%;
+}
+
+.site-header .wrap {
+    border: none;
+    padding: 30px 0;
+}
+
+.site-title {
+       color: #092F4E;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.site-title a, .site-title a:hover {
+    color: #092F4E;
+ 
+}
+.single-post .title-area {
+    display: none;
+}
+
+.single-post .site-header {
+    padding-top: 0px;
+}
+
+.single-post .animation-element.slide-left-500ms,.single-post .animation-element.slide-right-500ms {
+    opacity: 5 ;
+        transform: translate3d(0px, 0px, 0px);
+   
+}
+ 
+.single-post .rwa-primary-pages-after-entry .grey,.single-post .rwa-primary-pages-after-entry .blue {
+    width: 42%;
+   
+}
+.single-post .rwa-primary-pages-after-entry:before {
+    border-bottom: solid 3px #FFA500;
+    display: block;
+    content: '';
+    width: 100%;
+    margin-left: -385px;
+    height: 20px;
+    width: 155%;
+}
+
+.single-post .after-entry {
+    border-bottom: none; 
+}
+.single-post h1.entry-title:after {
+    border-bottom: solid 3px #FFA500;
+    display: block;
+    content: '';
+    width: 100%;
+    margin-left: -410px;
+    height: 20px;
+    width: 155%;
+}
+.single-post .site-header .wrap {
+    border: none;
+    padding: 0px 0;
+}
+
+.single-post h1.entry-title{
+    color: #092F4E;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.single-post .rwa-primary-pages-after-entry .widget-wrap {
+    padding-top: 25px;
+}
+.single-post .rwa-primary-pages-after-entry{
+padding-top: 0px;
+}
+@media screen and (max-width: 768px){
+.single-post .rwa-primary-pages-after-entry .blue, .single-post .rwa-primary-pages-after-entry .grey {
+    width: 100% !important;
+}
+.single-post .site-inner, .category-blog .site-inner  {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+
+/*mobile logo*/
+.mobilelogo {
+    display: inline-block !important;
+    float: left;
+    width: 6em;
+    margin-left: 2em;
+    margin-top: 5px;
+}
+.ubermenu-responsive-toggle {
+   
+    text-align: right !important;
+}
+
+.single-post .gch-header-image-inner {
+    display: none;
+}
+
+/*mobile responsive site tiels*/
+.rwa_primary_page .entry-title {
+       text-align: center;
+}
+.gch-header-image-inner {
+    display: none !important;
+ }
+.ubermenu .ubermenu-item-layout-image_left>.ubermenu-image {
+    display: none;
+}
+}
+
+
