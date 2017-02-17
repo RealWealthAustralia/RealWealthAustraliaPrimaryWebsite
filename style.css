@@ -29,7 +29,40 @@
 <!--  29-APR-16 Z Bangash	  Updated to Include classes for Home Top Left andd Home Top Right Widgets.				
 <!--  03-MAY-16 Z Bangash 	  Updated to include classees for Real  Estate Unplugged widget on the home page
 <!--  09-JUN-16 Z Bangash 	  Updated to include classees for 59 BM Optin Click Here Button		
-<!--  21-JUL-16 Z Bangash	  Updated the landing page template CSS.									  
+<!--  21-JUL-16 Z Bangash	  Updated the landing page template CSS.		
+<!--  17-FEB-17 Z Bangash	  Updated various basic CSS elements like H1, H2 and a to the design guidelines below.  -->
+		<!-- START Website Design Guidelines 
+		Internal Pages:
+		Headline (main heading): H2 30px – navy blue (#082e4e)- Bold 
+		Sub headings: H3 24px – navy blue (#082e4e)- Bold
+		Body Copy Headings – H4 20px – light blue (#4092a8) - bold
+		Body text: 16px - Black (#222)
+		Font Family used: Roboto, Sans Serif
+		Line colour: #4092a8
+		Link colour: #2e79a6
+		
+		
+		Homepage:
+		Headline (main heading): H2 30px – navy blue (#082e4e)- Bold
+		Sub headings: H3 24px – navy blue (#082e4e)-Bold
+		Body Copy Headings – H4 20px – light blue (#4092a8) - bold
+		Body text: Black (#222)
+		Font Family used: Roboto, Sans Serif
+		Line colour: #4092a8
+		Link colour: #2e79a6
+		
+		Also:
+		•	All lines should be the same length and thickness
+		•	All lines should be the same distance from the headings (same spacing)
+		•	All buttons should be the same style – light blue in colour
+		•	All headlines/main headings should be in caps-lock
+		•	All Subheadings should be sentence case
+		•	All body copy headings should be sentence case
+		•	All bolded body copy should be standard black
+		•	Helen’s sign-off should be her signature – example: wishing you real wealth in all areas of your life, (Helen’s signature + her name underneath in roboto)
+
+		END Website Guidelines ---->
+							  
 <!-- 																																																					   -->
 <!--  *******************************************************************************************************************************************************************************************************************  -->
 */ 
@@ -208,13 +241,13 @@ textarea:focus,
 
 a {
 	background-color: inherit;
-	color: #222;
+	color: #2e79a6;
 	font-weight: 400;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #e8554e;
+	color: #4092a8;
 }
 
 p {
@@ -336,7 +369,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #222;
+	/*color: #222;*/
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500; 
 	line-height: 1.2;
@@ -345,18 +378,22 @@ h6 {
 
 h1 {
 	font-size: 36px;
+	color: #222;
 }
 
 h2 {
 	font-size: 30px;
+	color: #082e4e;
 }
 
 h3 {
 	font-size: 24px;
+	color: #082e4e;
 }
 
 h4 {
 	font-size: 20px;
+	color: : #4092a8;
 }
 
 h5 {
